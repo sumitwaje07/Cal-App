@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="../Cal-App/Calculator_App.js"></script>
+    <style>
+        .container {
+                    width: 600px;
+                    min-height: 560px;
+                    background-color: antiquewhite;
+                    padding: 20px;
+                    border: 1px solid #000;
+                    text-align: center; 
+                    margin: auto;
+                    position: relative;
+}
+
+        h3{
+            margin:0 auto;
+            text-align: center;
+            width: fit-content;
+        }
+        input{
+            width: 550px;
+            height: 20px;
+            border-radius: 10px;
+            padding: 20px;
+            
+        }
+    </style>
+</head>
+<body onload="loadButtons()">
+    <div class="container">
+        <h3>Basic Calculator</h3><br><br>
+        <input type="text" id="txt">
+
+        <div id="grid" style="width: 300px; height: 300px; position: absolute; left: 100px;">
+            <table id="tbl"></table>
+        </div>
+    </div>
+</body>
+</html>
